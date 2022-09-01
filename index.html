@@ -9,60 +9,46 @@
     <title>Colégio ABC</title>
 </head>
 <body>
-    
-    <div class="navbar-container" id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
-    </div>
-    
-    <div class="input-container">
-        <div>
-            <h3>Pesquisa</h3>
+
+    <header>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <div>
+                <input id="filtro-matricula">
+                <form method="get" action="index.html">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="matricula" placeholder="Digite sua matricula aqui">
+                    <input type="submit" name="buscar" value="Buscar">    
+                </form>
+            </div>
         </div>
+    </header>
 
-        <div class="input-field-container">
-            <div>
-                <label for="busca-matricula">Matrícula:</label>
-                <input id="filtro-matricula">
+    <nav>
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
             </div>
-            <div>
-                <label for="busca-aluno">Aluno:</label>
-                <input id="filtro-matricula">
-            </div>
-        </div>   
-    </div>
+        </header>
 
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Matricula</th>
-                <th>Nome</th>
-                <th>Escola</th>
-            </tr>
-            <tr>
-                <td>202201</td>
-                <td>Juan Carvalho</td>
-                <td>Escola 1</td>
-            </tr>
-            <tr>
-                <td>202202</td>
-                <td>Paulo Herinque</td>
-                <td>Escola 2</td>
-            </tr>
-            <tr>
-                <td>202203</td>
-                <td>Paulo Brito</td>
-                <td>Escola 3</td>
-            </tr>
-            <tr>
-                <td>202004</td>
-                <td>Nwaeri Maryjane</td>
-                <td>Escola 4</td>
-            </tr>
-        </table>
-    </div>
-   
+        <div id="content-form">
+            <h1>Colégio ABC</h1>
+            <form action="index.html">
+                <input id="filtro-matricula" value="pesquisar aluno">
+                <form method="get" action="index.html">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="nome" placeholder="Digite sua matricula aqui">
+                    <input type="submit" name="buscar" value="buscar">    
+                </form>
+            </form>
+        </div>
+    </nav>
+
 </body>
 </html>
