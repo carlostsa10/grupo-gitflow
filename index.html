@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Colégio ABC</title>
 </head>
 <body>
@@ -25,17 +26,17 @@
         <div class="input-field-container">
             <div>
                 <label for="busca-matricula">Matrícula:</label>
-                <input id="filtro-matricula">
+                <input id="filtro" type="text" placeholder="Pesquisar matricula">
             </div>
             <div>
                 <label for="busca-aluno">Aluno:</label>
-                <input id="filtro-matricula">
+                <input id="filtro" type="text" placeholder="Pesquisar aluno">
             </div>
         </div>   
     </div>
 
     <div class="table-container">
-        <table id="lista">
+        <table>
             <thead>
                 <tr>
                     <th>Matricula</th>
@@ -43,7 +44,7 @@
                     <th>Escola</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="lista-alunos">
                 <tr>
                     <td>202201</td>
                     <td>Juan Carvalho</td>
@@ -65,6 +66,17 @@
                     <td>Escola 4</td>
                 </tr>
             </tbody>
+            <script>
+                $(document).ready(function() {
+                    $("#filtro").on("keyup", function() {
+                        var value = $(this).val().toLowerCase();
+                        $("#lista-alunos tr").filter(function() {
+                            $(this).toggle($(this).text()
+                            .toLowerCase().indexOf(value) > -1)
+                        });
+                    });
+                });
+            </script>
         </table>
     </div>
    
