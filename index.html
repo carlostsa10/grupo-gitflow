@@ -5,33 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Colégio ABC</title>
 </head>
 <body>
 
-    <nav>
-        <header>
-            <div class="navbar-container">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <div class="content-form">
-            <form action="index.html">
-                <h2>Pesquisar</h2>
-                <form method="get" action="index.html">
-                    <input id="filtro" type="text" name="nome" placeholder="Digite seu nome aqui">
-                    <input id="filtro" type="e-mail" name="nome" placeholder="Digite sua matricula aqui">
-                    <input type="submit" name="buscar" value="buscar">    
-                </form>
-            </form>
+    <header>
+        <div class="navbar-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
+
+    <div class="content-form">
+        <form action="index.html">
+            <h2>Pesquisar</h2>
+            <input id="filtro" type="text" name="aluno" placeholder="Buscar aluno" autocomplete="off">  
+        </form>
+    </div>
 
     <div class="table-container">
         <table>
@@ -50,18 +43,23 @@
                 </tr>
                 <tr>
                     <td>202202</td>
-                    <td>Paulo Herinque</td>
+                    <td>Caio Herinque</td>
                     <td>Escola 2</td>
                 </tr>
                 <tr>
                     <td>202203</td>
-                    <td>Paulo Brito</td>
+                    <td>Carlos tavares</td>
                     <td>Escola 3</td>
                 </tr>
                 <tr>
-                    <td>202004</td>
+                    <td>202204</td>
                     <td>Nwaeri Maryjane</td>
                     <td>Escola 4</td>
+                </tr>
+                <tr>
+                    <td>202205</td>
+                    <td>Paulo Brito</td>
+                    <td>Escola 1</td>
                 </tr>
             </tbody>
             <script>

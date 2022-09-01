@@ -38,7 +38,6 @@ body{
 }
 
 
-
 .input-field-container {
     display: flex;
 }
@@ -46,9 +45,37 @@ body{
 .content-form {
     margin: auto;
     margin-top: 45px;
-    width: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+.content-form h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#filtro:focus{
+    outline: none;
+}
+
+#filtro:hover{
+    color: #000;
+}
 
 .table-container {
     margin: auto;
