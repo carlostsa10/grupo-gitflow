@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Colégio ABC</title>
 </head>
 <body>
@@ -17,6 +18,14 @@
                 <li><a href="">Contato</a></li>
             </ul>
             <div>
+<<<<<<< HEAD
+                <label for="busca-matricula">Matrícula:</label>
+                <input id="filtro" type="text" placeholder="Pesquisar matricula">
+            </div>
+            <div>
+                <label for="busca-aluno">Aluno:</label>
+                <input id="filtro" type="text" placeholder="Pesquisar aluno">
+=======
                 <input id="filtro-matricula">
                 <form method="get" action="index.html">
                     <input type="text" name="nome" placeholder="digite seu Nome aqui">
@@ -34,6 +43,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
+>>>>>>> origin
             </div>
         </header>
 
@@ -52,6 +62,48 @@
 
     <div class="table-container">
         <table>
+<<<<<<< HEAD
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Nome</th>
+                    <th>Escola</th>
+                </tr>
+            </thead>
+            <tbody id="lista-alunos">
+                <tr>
+                    <td>202201</td>
+                    <td>Juan Carvalho</td>
+                    <td>Escola 1</td>
+                </tr>
+                <tr>
+                    <td>202202</td>
+                    <td>Paulo Herinque</td>
+                    <td>Escola 2</td>
+                </tr>
+                <tr>
+                    <td>202203</td>
+                    <td>Paulo Brito</td>
+                    <td>Escola 3</td>
+                </tr>
+                <tr>
+                    <td>202004</td>
+                    <td>Nwaeri Maryjane</td>
+                    <td>Escola 4</td>
+                </tr>
+            </tbody>
+            <script>
+                $(document).ready(function() {
+                    $("#filtro").on("keyup", function() {
+                        var value = $(this).val().toLowerCase();
+                        $("#lista-alunos tr").filter(function() {
+                            $(this).toggle($(this).text()
+                            .toLowerCase().indexOf(value) > -1)
+                        });
+                    });
+                });
+            </script>
+=======
             <tr>
                 <th>Matricula</th>
                 <th>Nome</th>
@@ -82,6 +134,7 @@
                 <td>Carlos Tavares</td>
                 <td>Escola 5</td>
             </tr>
+>>>>>>> origin
         </table>
     </div>
    
