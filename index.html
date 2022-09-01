@@ -9,30 +9,46 @@
     <title>Colégio ABC</title>
 </head>
 <body>
-    
-    <div class="navbar-container" id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
-    </div>
-    
-    <div class="input-container">
-        <div>
-            <h3>Pesquisa</h3>
-        </div>
 
-        <div class="input-field-container">
+    <header>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
             <div>
-                <label for="busca-matricula">Matrícula:</label>
                 <input id="filtro-matricula">
+                <form method="get" action="index.html">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="matricula" placeholder="Digite sua matricula aqui">
+                    <input type="submit" name="buscar" value="Buscar">    
+                </form>
             </div>
-            <div>
-                <label for="busca-aluno">Aluno:</label>
-                <input id="filtro-matricula">
+        </div>
+    </header>
+
+    <nav>
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
             </div>
-        </div>   
-    </div>
+        </header>
+
+        <div id="content-form">
+            <h1>Colégio ABC</h1>
+            <form action="index.html">
+                <input id="filtro-matricula" value="pesquisar aluno">
+                <form method="get" action="index.html">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="nome" placeholder="Digite sua matricula aqui">
+                    <input type="submit" name="buscar" value="buscar">    
+                </form>
+            </form>
+        </div>
+    </nav>
 
     <div class="table-container">
         <table>
